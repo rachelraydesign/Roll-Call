@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+//Import player service
+import { PlayerService } from '../player.service';
+
 //Importing player interface to the list. 
 import { iPlayer } from '../player';
 
@@ -22,7 +25,8 @@ export class PlayerListComponent implements OnInit {
     }
   ];
 
-  constructor() { }
+  //using the player service
+  constructor(private playerService: PlayerService) {}
 
   ngOnInit() {
   }
