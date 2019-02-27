@@ -1,2 +1,5 @@
-export interface Player {
+export interface iPlayer 
+{
+    id: number;
+    text: string;
 }
